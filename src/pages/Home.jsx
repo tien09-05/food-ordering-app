@@ -48,7 +48,7 @@ const featureData = [
 
 const Home = () => {
   const [category, setCategory] = useState("ALL");
-  const [allProducts, setAllProducts] = useState(products);
+  const [allProducts] = useState(products);
 
   const productsData = useMemo(() => {
     if (category === "ALL") {
